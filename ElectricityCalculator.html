@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-fluid vh-100">
+    <div class="row h-100">
+        
+        <!-- Left Panel -->
+        <div class="col-md-5 left-panel d-flex flex-column">
+            <div>
+                <h1 class="title">Electric Meter Consumption Calculator</h1>
+                <p class="description">
+                    The Electric Meter Consumption Calculator helps users track and calculate their electricity 
+                    usage based on meter readings, providing insights into energy consumption and cost estimation.
+                </p>
+            </div>
+            <!-- Responsive Image -->
+            <div class="icon">
+                <img src="wind-turbine.gif" alt="Wind Turbine">
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="col-md-7 right-panel d-flex align-items-center justify-content-center">
+            <form class="w-75">
+                <div class="mb-3">
+                    <label class="form-label">Meter Number</label>
+                    <input type="text" id="meterId" class="form-control" placeholder="Enter the meter number">
+                </div>
+
+                <hr>
+
+                <div class="mb-3">
+                    <label class="form-label">Previous Reading</label>
+                    <input type="number" id="prevReading" class="form-control" placeholder="Enter the previous reading">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Current Reading</label>
+                    <input type="number" id="currReading" class="form-control" placeholder="Enter the current reading">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Cost</label>
+                    <input type="number" id="costPerKwh" class="form-control" placeholder="Enter the cost per kWh">
+                </div>
+
+                <hr>
+                
+                <button type="submit" id="calculateBtn" class="btn calculate-btn w-100">Calculate!</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Left Panel */
+.left-panel {
+    background: linear-gradient(130.41deg, #DEE4FA 14.55%, #5B78DF 79.57%);
+    color: white;
+    text-align: left;
+    justify-content: center;
+    padding-left: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: Hepta Slab;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #DF735B;
+}
+
+/* Responsive Title */
+@media (max-width: 992px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+.highlight {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Responsive Description */
+@media (max-width: 992px) {
+    .description {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.icon {
+    width: 100%;  /* Responsive width */
+    display: flex;
+    justify-content: flex-end; /* Align right */
+    padding-bottom: 20px;
+}
+
+.icon img {
+    width: 80%; /* Default width */
+    max-width: 180px; /* Prevents excessive growth */
+    height: auto;
+}
+
+/* Right Panel */
+.right-panel {
+    background: linear-gradient(130deg, #656a7b 0%, #29365f 50%);
+    color: white;
+    padding: 40px;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.calculate-btn {
+    background-color: #DF735B;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.calculate-btn:hover {
+    background-color: #ff6f61;
+}
+
+@media (max-width: 768px) {
+    .icon img {
+        width: 50%; /* Larger on smaller screens */
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon img {
+        width: 60%;
+        max-width: 120px;
+    }
+}
